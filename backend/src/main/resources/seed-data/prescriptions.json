@@ -1,0 +1,22 @@
+[
+  {"patientEmail":"patient@mail.com","doctorEmail":"doctor@mail.com","prescribedDate":"2026-10-01","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient02@mail.com","doctorEmail":"doctor02@mail.com","prescribedDate":"2026-10-02","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient03@mail.com","doctorEmail":"doctor03@mail.com","prescribedDate":"2026-10-03","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient04@mail.com","doctorEmail":"doctor04@mail.com","prescribedDate":"2026-10-04","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient05@mail.com","doctorEmail":"doctor05@mail.com","prescribedDate":"2026-10-05","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient06@mail.com","doctorEmail":"doctor06@mail.com","prescribedDate":"2026-10-06","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient07@mail.com","doctorEmail":"doctor07@mail.com","prescribedDate":"2026-10-07","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient08@mail.com","doctorEmail":"doctor08@mail.com","prescribedDate":"2026-10-08","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient09@mail.com","doctorEmail":"doctor09@mail.com","prescribedDate":"2026-10-09","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient10@mail.com","doctorEmail":"doctor10@mail.com","prescribedDate":"2026-10-10","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient11@mail.com","doctorEmail":"doctor11@mail.com","prescribedDate":"2026-10-11","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient12@mail.com","doctorEmail":"doctor12@mail.com","prescribedDate":"2026-10-12","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient13@mail.com","doctorEmail":"doctor13@mail.com","prescribedDate":"2026-10-13","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient14@mail.com","doctorEmail":"doctor14@mail.com","prescribedDate":"2026-10-14","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient15@mail.com","doctorEmail":"doctor15@mail.com","prescribedDate":"2026-10-15","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient16@mail.com","doctorEmail":"doctor16@mail.com","prescribedDate":"2026-10-01","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient17@mail.com","doctorEmail":"doctor17@mail.com","prescribedDate":"2026-10-02","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient18@mail.com","doctorEmail":"doctor18@mail.com","prescribedDate":"2026-10-03","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient19@mail.com","doctorEmail":"doctor19@mail.com","prescribedDate":"2026-10-04","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"},
+  {"patientEmail":"patient20@mail.com","doctorEmail":"doctor20@mail.com","prescribedDate":"2026-10-05","medication":"Prescription review","dosage":"As directed by clinician","status":"ACTIVE"}
+]
