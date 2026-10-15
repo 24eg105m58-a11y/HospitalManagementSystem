@@ -6,7 +6,8 @@ import {
   Users, Wallet, X, Send, Pill, Download,
 } from 'lucide-react'
 
-const API = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '')
+const configuredApiUrl = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '')
+const API = configuredApiUrl.endsWith('/api') ? configuredApiUrl : `${configuredApiUrl}/api`
 const STORAGE_KEY = 'careflow-auth'
 const allNavigation = [
   ['Dashboard', LayoutDashboard, ['ADMIN', 'DOCTOR', 'RECEPTIONIST', 'PATIENT']],
