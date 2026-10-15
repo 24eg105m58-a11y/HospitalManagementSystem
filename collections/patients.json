@@ -1,142 +1,184 @@
-﻿[
-    {
-        "email":  "patient@mail.com",
-        "phone":  "+91 90000 10001",
-        "dateOfBirth":  "1990-02-14",
-        "bloodGroup":  "O+",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient02@mail.com",
-        "phone":  "+91 90000 10002",
-        "dateOfBirth":  "1986-07-21",
-        "bloodGroup":  "A+",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient03@mail.com",
-        "phone":  "+91 90000 10003",
-        "dateOfBirth":  "1978-11-08",
-        "bloodGroup":  "B+",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient04@mail.com",
-        "phone":  "+91 90000 10004",
-        "dateOfBirth":  "1995-03-12",
-        "bloodGroup":  "AB+",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient05@mail.com",
-        "phone":  "+91 90000 10005",
-        "dateOfBirth":  "1982-09-29",
-        "bloodGroup":  "O-",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient06@mail.com",
-        "phone":  "+91 90000 10006",
-        "dateOfBirth":  "1992-05-17",
-        "bloodGroup":  "A-",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient07@mail.com",
-        "phone":  "+91 90000 10007",
-        "dateOfBirth":  "1974-12-04",
-        "bloodGroup":  "B-",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient08@mail.com",
-        "phone":  "+91 90000 10008",
-        "dateOfBirth":  "2001-01-23",
-        "bloodGroup":  "O+",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient09@mail.com",
-        "phone":  "+91 90000 10009",
-        "dateOfBirth":  "1989-06-30",
-        "bloodGroup":  "AB-",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient10@mail.com",
-        "phone":  "+91 90000 10010",
-        "dateOfBirth":  "1998-10-05",
-        "bloodGroup":  "A+",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient11@mail.com",
-        "phone":  "+91 90000 10011",
-        "dateOfBirth":  "1971-04-19",
-        "bloodGroup":  "O+",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient12@mail.com",
-        "phone":  "+91 90000 10012",
-        "dateOfBirth":  "1984-08-11",
-        "bloodGroup":  "B+",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient13@mail.com",
-        "phone":  "+91 90000 10013",
-        "dateOfBirth":  "1993-02-27",
-        "bloodGroup":  "A-",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient14@mail.com",
-        "phone":  "+91 90000 10014",
-        "dateOfBirth":  "2000-12-08",
-        "bloodGroup":  "O-",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient15@mail.com",
-        "phone":  "+91 90000 10015",
-        "dateOfBirth":  "1979-06-15",
-        "bloodGroup":  "AB+",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient16@mail.com",
-        "phone":  "+91 90000 10016",
-        "dateOfBirth":  "1991-09-02",
-        "bloodGroup":  "A+",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient17@mail.com",
-        "phone":  "+91 90000 10017",
-        "dateOfBirth":  "1987-03-25",
-        "bloodGroup":  "B-",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient18@mail.com",
-        "phone":  "+91 90000 10018",
-        "dateOfBirth":  "1996-11-13",
-        "bloodGroup":  "O+",
-        "gender":  "Female"
-    },
-    {
-        "email":  "patient19@mail.com",
-        "phone":  "+91 90000 10019",
-        "dateOfBirth":  "1976-07-06",
-        "bloodGroup":  "AB-",
-        "gender":  "Male"
-    },
-    {
-        "email":  "patient20@mail.com",
-        "phone":  "+91 90000 10020",
-        "dateOfBirth":  "2002-04-22",
-        "bloodGroup":  "B+",
-        "gender":  "Female"
-    }
+[
+  {
+    "email": "patient@mail.com",
+    "phone": "+91 90000 10001",
+    "dateOfBirth": "1990-02-14",
+    "bloodGroup": "O+",
+    "gender": "Male"
+  },
+  {
+    "email": "patient02@mail.com",
+    "phone": "+91 90000 10002",
+    "dateOfBirth": "1986-07-21",
+    "bloodGroup": "A+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient03@mail.com",
+    "phone": "+91 90000 10003",
+    "dateOfBirth": "1978-11-08",
+    "bloodGroup": "B+",
+    "gender": "Male"
+  },
+  {
+    "email": "patient04@mail.com",
+    "phone": "+91 90000 10004",
+    "dateOfBirth": "1995-03-12",
+    "bloodGroup": "AB+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient05@mail.com",
+    "phone": "+91 90000 10005",
+    "dateOfBirth": "1982-09-29",
+    "bloodGroup": "O-",
+    "gender": "Male"
+  },
+  {
+    "email": "patient06@mail.com",
+    "phone": "+91 90000 10006",
+    "dateOfBirth": "1992-05-17",
+    "bloodGroup": "A-",
+    "gender": "Female"
+  },
+  {
+    "email": "patient07@mail.com",
+    "phone": "+91 90000 10007",
+    "dateOfBirth": "1974-12-04",
+    "bloodGroup": "B-",
+    "gender": "Male"
+  },
+  {
+    "email": "patient08@mail.com",
+    "phone": "+91 90000 10008",
+    "dateOfBirth": "2001-01-23",
+    "bloodGroup": "O+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient09@mail.com",
+    "phone": "+91 90000 10009",
+    "dateOfBirth": "1989-06-30",
+    "bloodGroup": "AB-",
+    "gender": "Male"
+  },
+  {
+    "email": "patient10@mail.com",
+    "phone": "+91 90000 10010",
+    "dateOfBirth": "1998-10-05",
+    "bloodGroup": "A+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient11@mail.com",
+    "phone": "+91 90000 10011",
+    "dateOfBirth": "1971-04-19",
+    "bloodGroup": "O+",
+    "gender": "Male"
+  },
+  {
+    "email": "patient12@mail.com",
+    "phone": "+91 90000 10012",
+    "dateOfBirth": "1984-08-11",
+    "bloodGroup": "B+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient13@mail.com",
+    "phone": "+91 90000 10013",
+    "dateOfBirth": "1993-02-27",
+    "bloodGroup": "A-",
+    "gender": "Male"
+  },
+  {
+    "email": "patient14@mail.com",
+    "phone": "+91 90000 10014",
+    "dateOfBirth": "2000-12-08",
+    "bloodGroup": "O-",
+    "gender": "Female"
+  },
+  {
+    "email": "patient15@mail.com",
+    "phone": "+91 90000 10015",
+    "dateOfBirth": "1979-06-15",
+    "bloodGroup": "AB+",
+    "gender": "Male"
+  },
+  {
+    "email": "patient16@mail.com",
+    "phone": "+91 90000 10016",
+    "dateOfBirth": "1991-09-02",
+    "bloodGroup": "A+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient17@mail.com",
+    "phone": "+91 90000 10017",
+    "dateOfBirth": "1987-03-25",
+    "bloodGroup": "B-",
+    "gender": "Male"
+  },
+  {
+    "email": "patient18@mail.com",
+    "phone": "+91 90000 10018",
+    "dateOfBirth": "1996-11-13",
+    "bloodGroup": "O+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient19@mail.com",
+    "phone": "+91 90000 10019",
+    "dateOfBirth": "1976-07-06",
+    "bloodGroup": "AB-",
+    "gender": "Male"
+  },
+  {
+    "email": "patient20@mail.com",
+    "phone": "+91 90000 10020",
+    "dateOfBirth": "2002-04-22",
+    "bloodGroup": "B+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient21@mail.com",
+    "phone": "+91 90000 10021",
+    "dateOfBirth": "1988-05-14",
+    "bloodGroup": "O+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient22@mail.com",
+    "phone": "+91 90000 10022",
+    "dateOfBirth": "1993-09-27",
+    "bloodGroup": "A-",
+    "gender": "Male"
+  },
+  {
+    "email": "patient23@mail.com",
+    "phone": "+91 90000 10023",
+    "dateOfBirth": "1971-01-09",
+    "bloodGroup": "B+",
+    "gender": "Female"
+  },
+  {
+    "email": "patient24@mail.com",
+    "phone": "+91 90000 10024",
+    "dateOfBirth": "2000-12-03",
+    "bloodGroup": "AB+",
+    "gender": "Male"
+  },
+  {
+    "email": "patient25@mail.com",
+    "phone": "+91 90000 10025",
+    "dateOfBirth": "1982-06-19",
+    "bloodGroup": "O-",
+    "gender": "Female"
+  },
+  {
+    "email": "patient26@mail.com",
+    "phone": "+91 90000 10026",
+    "dateOfBirth": "1997-03-31",
+    "bloodGroup": "A+",
+    "gender": "Male"
+  }
 ]

@@ -1,102 +1,132 @@
-﻿[
-    {
-        "email":  "doctor@mail.com",
-        "specialization":  "Cardiology",
-        "phone":  "+91 90000 20001"
-    },
-    {
-        "email":  "doctor02@mail.com",
-        "specialization":  "Neurology",
-        "phone":  "+91 90000 20002"
-    },
-    {
-        "email":  "doctor03@mail.com",
-        "specialization":  "Pediatrics",
-        "phone":  "+91 90000 20003"
-    },
-    {
-        "email":  "doctor04@mail.com",
-        "specialization":  "Orthopedics",
-        "phone":  "+91 90000 20004"
-    },
-    {
-        "email":  "doctor05@mail.com",
-        "specialization":  "Dermatology",
-        "phone":  "+91 90000 20005"
-    },
-    {
-        "email":  "doctor06@mail.com",
-        "specialization":  "Ophthalmology",
-        "phone":  "+91 90000 20006"
-    },
-    {
-        "email":  "doctor07@mail.com",
-        "specialization":  "Oncology",
-        "phone":  "+91 90000 20007"
-    },
-    {
-        "email":  "doctor08@mail.com",
-        "specialization":  "Endocrinology",
-        "phone":  "+91 90000 20008"
-    },
-    {
-        "email":  "doctor09@mail.com",
-        "specialization":  "Gastroenterology",
-        "phone":  "+91 90000 20009"
-    },
-    {
-        "email":  "doctor10@mail.com",
-        "specialization":  "Psychiatry",
-        "phone":  "+91 90000 20010"
-    },
-    {
-        "email":  "doctor11@mail.com",
-        "specialization":  "Cardiology",
-        "phone":  "+91 90000 20011"
-    },
-    {
-        "email":  "doctor12@mail.com",
-        "specialization":  "Neurology",
-        "phone":  "+91 90000 20012"
-    },
-    {
-        "email":  "doctor13@mail.com",
-        "specialization":  "General Medicine",
-        "phone":  "+91 90000 20013"
-    },
-    {
-        "email":  "doctor14@mail.com",
-        "specialization":  "Orthopedics",
-        "phone":  "+91 90000 20014"
-    },
-    {
-        "email":  "doctor15@mail.com",
-        "specialization":  "Pediatrics",
-        "phone":  "+91 90000 20015"
-    },
-    {
-        "email":  "doctor16@mail.com",
-        "specialization":  "Dermatology",
-        "phone":  "+91 90000 20016"
-    },
-    {
-        "email":  "doctor17@mail.com",
-        "specialization":  "Ophthalmology",
-        "phone":  "+91 90000 20017"
-    },
-    {
-        "email":  "doctor18@mail.com",
-        "specialization":  "Oncology",
-        "phone":  "+91 90000 20018"
-    },
-    {
-        "email":  "doctor19@mail.com",
-        "specialization":  "Endocrinology",
-        "phone":  "+91 90000 20019"
-    },
-    {
-        "email":  "doctor20@mail.com",
-        "specialization":  "General Medicine",
-        "phone":  "+91 90000 20020"
-    }
+[
+  {
+    "email": "doctor@mail.com",
+    "specialization": "Cardiology",
+    "phone": "+91 90000 20001"
+  },
+  {
+    "email": "doctor02@mail.com",
+    "specialization": "Neurology",
+    "phone": "+91 90000 20002"
+  },
+  {
+    "email": "doctor03@mail.com",
+    "specialization": "Pediatrics",
+    "phone": "+91 90000 20003"
+  },
+  {
+    "email": "doctor04@mail.com",
+    "specialization": "Orthopedics",
+    "phone": "+91 90000 20004"
+  },
+  {
+    "email": "doctor05@mail.com",
+    "specialization": "Dermatology",
+    "phone": "+91 90000 20005"
+  },
+  {
+    "email": "doctor06@mail.com",
+    "specialization": "Ophthalmology",
+    "phone": "+91 90000 20006"
+  },
+  {
+    "email": "doctor07@mail.com",
+    "specialization": "Oncology",
+    "phone": "+91 90000 20007"
+  },
+  {
+    "email": "doctor08@mail.com",
+    "specialization": "Endocrinology",
+    "phone": "+91 90000 20008"
+  },
+  {
+    "email": "doctor09@mail.com",
+    "specialization": "Gastroenterology",
+    "phone": "+91 90000 20009"
+  },
+  {
+    "email": "doctor10@mail.com",
+    "specialization": "Psychiatry",
+    "phone": "+91 90000 20010"
+  },
+  {
+    "email": "doctor11@mail.com",
+    "specialization": "Cardiology",
+    "phone": "+91 90000 20011"
+  },
+  {
+    "email": "doctor12@mail.com",
+    "specialization": "Neurology",
+    "phone": "+91 90000 20012"
+  },
+  {
+    "email": "doctor13@mail.com",
+    "specialization": "General Medicine",
+    "phone": "+91 90000 20013"
+  },
+  {
+    "email": "doctor14@mail.com",
+    "specialization": "Orthopedics",
+    "phone": "+91 90000 20014"
+  },
+  {
+    "email": "doctor15@mail.com",
+    "specialization": "Pediatrics",
+    "phone": "+91 90000 20015"
+  },
+  {
+    "email": "doctor16@mail.com",
+    "specialization": "Dermatology",
+    "phone": "+91 90000 20016"
+  },
+  {
+    "email": "doctor17@mail.com",
+    "specialization": "Ophthalmology",
+    "phone": "+91 90000 20017"
+  },
+  {
+    "email": "doctor18@mail.com",
+    "specialization": "Oncology",
+    "phone": "+91 90000 20018"
+  },
+  {
+    "email": "doctor19@mail.com",
+    "specialization": "Endocrinology",
+    "phone": "+91 90000 20019"
+  },
+  {
+    "email": "doctor20@mail.com",
+    "specialization": "General Medicine",
+    "phone": "+91 90000 20020"
+  },
+  {
+    "email": "doctor21@mail.com",
+    "specialization": "Cardiology",
+    "phone": "+91 90000 221"
+  },
+  {
+    "email": "doctor22@mail.com",
+    "specialization": "Pediatrics",
+    "phone": "+91 90000 222"
+  },
+  {
+    "email": "doctor23@mail.com",
+    "specialization": "Neurology",
+    "phone": "+91 90000 223"
+  },
+  {
+    "email": "doctor24@mail.com",
+    "specialization": "Orthopedics",
+    "phone": "+91 90000 224"
+  },
+  {
+    "email": "doctor25@mail.com",
+    "specialization": "Dermatology",
+    "phone": "+91 90000 225"
+  },
+  {
+    "email": "doctor26@mail.com",
+    "specialization": "General Medicine",
+    "phone": "+91 90000 226"
+  }
 ]

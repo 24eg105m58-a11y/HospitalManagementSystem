@@ -48,12 +48,12 @@ class HospitalApiIntegrationTest {
         AuthResponse admin = login("admin@mail.com");
         assertThat(admin.user().role().name()).isEqualTo("ADMIN");
 
-        assertCollectionCount("/api/patients", admin.token(), 20);
-        assertCollectionCount("/api/doctors", admin.token(), 20);
-        assertCollectionCount("/api/appointments", admin.token(), 20);
-        assertCollectionCount("/api/medical-records", admin.token(), 20);
-        assertCollectionCount("/api/prescriptions", admin.token(), 20);
-        assertCollectionCount("/api/invoices", admin.token(), 20);
+        assertCollectionCount("/api/patients", admin.token(), 26);
+        assertCollectionCount("/api/doctors", admin.token(), 26);
+        assertCollectionCount("/api/appointments", admin.token(), 26);
+        assertCollectionCount("/api/medical-records", admin.token(), 26);
+        assertCollectionCount("/api/prescriptions", admin.token(), 26);
+        assertCollectionCount("/api/invoices", admin.token(), 26);
 
         AuthResponse doctor = login("doctor@mail.com");
         assertThat(doctor.user().role().name()).isEqualTo("DOCTOR");

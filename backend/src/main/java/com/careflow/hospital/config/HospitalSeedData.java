@@ -31,7 +31,9 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 @Component
 @ConditionalOnProperty(prefix = "app.seed", name = "enabled", havingValue = "true", matchIfMissing = true)
@@ -89,80 +91,117 @@ public class HospitalSeedData implements ApplicationRunner {
 
     private Map<String, Patient> seedPatients() {
         Map<String, Patient> byEmail = new HashMap<>();
-        if (patients.count() == 0) {
-            for (JsonNode row : rows("patients.json")) {
-                String email = text(row, "email");
+        for (Patient patient : patients.findAll()) {
+            if (patient.getEmail() != null) {
+                byEmail.put(patient.getEmail().toLowerCase(java.util.Locale.ROOT), patient);
+            }
+        }
+        for (JsonNode row : rows("patients.json")) {
+            String email = text(row, "email");
+            String normalizedEmail = email.toLowerCase(java.util.Locale.ROOT);
+            if (!byEmail.containsKey(normalizedEmail)) {
                 HospitalUser user = users.findByEmailIgnoreCase(email)
                         .orElseThrow(() -> new IllegalStateException("Missing seed user for patient: " + email));
                 Patient patient = new Patient(user.getFullName(), email, text(row, "phone"),
                         LocalDate.parse(text(row, "dateOfBirth")), text(row, "bloodGroup"), text(row, "gender"));
                 patient.setUser(user);
-                patients.save(patient);
-            }
-        }
-        for (Patient patient : patients.findAll()) {
-            if (patient.getEmail() != null) {
-                byEmail.put(patient.getEmail().toLowerCase(java.util.Locale.ROOT), patient);
+                byEmail.put(normalizedEmail, patients.save(patient));
             }
         }
         return byEmail;
     }
 
     private Map<String, Doctor> seedDoctors() {
-        if (doctors.count() == 0) {
-            for (JsonNode row : rows("doctors.json")) {
-                String email = text(row, "email");
-                HospitalUser user = users.findByEmailIgnoreCase(email)
-                        .orElseThrow(() -> new IllegalStateException("Missing seed user for doctor: " + email));
-                Doctor doctor = new Doctor(user.getFullName(), email, text(row, "specialization"), text(row, "phone"));
-                doctor.setUser(user);
-                doctors.save(doctor);
-            }
-        }
         Map<String, Doctor> byEmail = new HashMap<>();
         for (Doctor doctor : doctors.findAll()) {
             if (doctor.getEmail() != null) {
                 byEmail.put(doctor.getEmail().toLowerCase(java.util.Locale.ROOT), doctor);
             }
         }
+        for (JsonNode row : rows("doctors.json")) {
+            String email = text(row, "email");
+            String normalizedEmail = email.toLowerCase(java.util.Locale.ROOT);
+            if (!byEmail.containsKey(normalizedEmail)) {
+                HospitalUser user = users.findByEmailIgnoreCase(email)
+                        .orElseThrow(() -> new IllegalStateException("Missing seed user for doctor: " + email));
+                Doctor doctor = new Doctor(user.getFullName(), email, text(row, "specialization"), text(row, "phone"));
+                doctor.setUser(user);
+                byEmail.put(normalizedEmail, doctors.save(doctor));
+            }
+        }
         return byEmail;
     }
 
     private void seedAppointments(Map<String, Patient> patientByEmail, Map<String, Doctor> doctorByEmail) {
-        if (appointments.count() != 0) return;
+        Set<String> existing = new HashSet<>();
+        for (Appointment appointment : appointments.findAll()) {
+            existing.add(key(appointment.getPatient().getEmail(), appointment.getDoctor().getEmail(),
+                    appointment.getDepartment(), appointment.getAppointmentDate().toString(),
+                    appointment.getAppointmentTime().toString()));
+        }
         for (JsonNode row : rows("appointments.json")) {
             Patient patient = required(patientByEmail, row, "patientEmail", "patient");
             Doctor doctor = required(doctorByEmail, row, "doctorEmail", "doctor");
-            appointments.save(new Appointment(patient, doctor, text(row, "department"),
-                    LocalDate.parse(text(row, "appointmentDate")), LocalTime.parse(text(row, "appointmentTime")),
-                    text(row, "status")));
+            String department = text(row, "department");
+            LocalDate date = LocalDate.parse(text(row, "appointmentDate"));
+            LocalTime time = LocalTime.parse(text(row, "appointmentTime"));
+            if (existing.add(key(patient.getEmail(), doctor.getEmail(), department, date.toString(), time.toString()))) {
+                appointments.save(new Appointment(patient, doctor, department, date, time, text(row, "status")));
+            }
         }
     }
 
     private void seedMedicalRecords(Map<String, Patient> patientByEmail, Map<String, Doctor> doctorByEmail) {
-        if (records.count() != 0) return;
+        Set<String> existing = new HashSet<>();
+        for (MedicalRecord record : records.findAll()) {
+            existing.add(key(record.getPatient().getEmail(), record.getDoctor().getEmail(),
+                    record.getVisitDate().toString(), record.getDiagnosis()));
+        }
         for (JsonNode row : rows("medical-records.json")) {
-            records.save(new MedicalRecord(required(patientByEmail, row, "patientEmail", "patient"),
-                    required(doctorByEmail, row, "doctorEmail", "doctor"), LocalDate.parse(text(row, "visitDate")),
-                    text(row, "diagnosis"), text(row, "notes")));
+            Patient patient = required(patientByEmail, row, "patientEmail", "patient");
+            Doctor doctor = required(doctorByEmail, row, "doctorEmail", "doctor");
+            LocalDate date = LocalDate.parse(text(row, "visitDate"));
+            String diagnosis = text(row, "diagnosis");
+            if (existing.add(key(patient.getEmail(), doctor.getEmail(), date.toString(), diagnosis))) {
+                records.save(new MedicalRecord(patient, doctor, date, diagnosis, text(row, "notes")));
+            }
         }
     }
 
     private void seedPrescriptions(Map<String, Patient> patientByEmail, Map<String, Doctor> doctorByEmail) {
-        if (prescriptions.count() != 0) return;
+        Set<String> existing = new HashSet<>();
+        for (Prescription prescription : prescriptions.findAll()) {
+            existing.add(key(prescription.getPatient().getEmail(), prescription.getDoctor().getEmail(),
+                    prescription.getPrescribedDate().toString(), prescription.getMedication(), prescription.getDosage()));
+        }
         for (JsonNode row : rows("prescriptions.json")) {
-            prescriptions.save(new Prescription(required(patientByEmail, row, "patientEmail", "patient"),
-                    required(doctorByEmail, row, "doctorEmail", "doctor"), LocalDate.parse(text(row, "prescribedDate")),
-                    text(row, "medication"), text(row, "dosage"), text(row, "status")));
+            Patient patient = required(patientByEmail, row, "patientEmail", "patient");
+            Doctor doctor = required(doctorByEmail, row, "doctorEmail", "doctor");
+            LocalDate date = LocalDate.parse(text(row, "prescribedDate"));
+            String medication = text(row, "medication");
+            String dosage = text(row, "dosage");
+            if (existing.add(key(patient.getEmail(), doctor.getEmail(), date.toString(), medication, dosage))) {
+                prescriptions.save(new Prescription(patient, doctor, date, medication, dosage, text(row, "status")));
+            }
         }
     }
 
     private void seedInvoices(Map<String, Patient> patientByEmail) {
-        if (invoices.count() != 0) return;
-        for (JsonNode row : rows("invoices.json")) {
-            invoices.save(new Invoice(text(row, "invoiceNumber"), required(patientByEmail, row, "patientEmail", "patient"),
-                    new BigDecimal(text(row, "amount")), LocalDate.parse(text(row, "invoiceDate")), text(row, "status")));
+        Set<String> existing = new HashSet<>();
+        for (Invoice invoice : invoices.findAll()) {
+            existing.add(invoice.getInvoiceNumber());
         }
+        for (JsonNode row : rows("invoices.json")) {
+            String invoiceNumber = text(row, "invoiceNumber");
+            if (existing.add(invoiceNumber)) {
+                invoices.save(new Invoice(invoiceNumber, required(patientByEmail, row, "patientEmail", "patient"),
+                        new BigDecimal(text(row, "amount")), LocalDate.parse(text(row, "invoiceDate")), text(row, "status")));
+            }
+        }
+    }
+
+    private String key(String... parts) {
+        return String.join("|", parts).toLowerCase(java.util.Locale.ROOT);
     }
 
     private <T> T required(Map<String, T> entities, JsonNode row, String reference, String collection) {

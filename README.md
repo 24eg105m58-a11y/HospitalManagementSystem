@@ -46,9 +46,9 @@ or modify your local database.
 
 ## Local starter accounts
 
-The local database is automatically populated on first startup with 20 records
+The local database is automatically populated on startup with 26 records
 in each of the patient, doctor, appointment, medical-record, prescription, and
-invoice collections. Its 42 role-specific starter accounts all use the local
+invoice collections. Its 55 role-specific starter accounts all use the local
 development password `123456`.
 
 | Role | Starter email | Password |
@@ -66,8 +66,8 @@ using `SEED_DEFAULT_PASSWORD`.
 All bundled patient, appointment, medical-record, and billing information is
 **synthetic local testing data**; it is not real patient information or medical
 guidance. Collection JSON files live in
-`backend/src/main/resources/seed-data/`. On startup, the backend only seeds
-each collection if that database table is empty.
+`backend/src/main/resources/seed-data/`. On startup, the backend inserts seed
+records that are missing from each collection and leaves existing records intact.
 
 ### Production security
 
