@@ -13,3 +13,9 @@
 .primary-button,.floating-ai{box-shadow:3px 3px 7px #2869c533,-2px -2px 6px #ffffffaa,inset 1px 1px 0 #ffffff66}
 .outline-button,.icon-button,.assistant-promo,.chat-form{box-shadow:2px 2px 5px #dfe6ef,-2px -2px 5px #ffffff}
 .nav-item.active,.badge,.trend,.count-pill{box-shadow:inset 1px 1px 2px #ffffffaa,inset -1px -1px 2px #dce6f3}
+
+/* Global 10% visual scale and a restrained glass surface treatment. */
+html{zoom:1.1}
+body{min-width:calc(360px / 1.1)}
+.sidebar,.topbar,.metric-card,.panel,.workspace,.help-card,.assistant-welcome,.settings-panel,.modal,.assistant-drawer,.hero,.feature-card,.auth-card,.local-credentials{background-color:rgba(255,255,255,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.topbar,.sidebar,.metric-card,.panel,.feature-card,.auth-card{border-color:rgba(222,232,244,.82)}
