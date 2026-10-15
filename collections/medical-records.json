@@ -1,0 +1,142 @@
+﻿[
+    {
+        "patientEmail":  "patient@mail.com",
+        "doctorEmail":  "doctor@mail.com",
+        "visitDate":  "2026-10-01",
+        "diagnosis":  "Routine health review",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient02@mail.com",
+        "doctorEmail":  "doctor02@mail.com",
+        "visitDate":  "2026-10-02",
+        "diagnosis":  "Neurology follow-up",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient03@mail.com",
+        "doctorEmail":  "doctor03@mail.com",
+        "visitDate":  "2026-10-03",
+        "diagnosis":  "Pediatric wellness visit",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient04@mail.com",
+        "doctorEmail":  "doctor04@mail.com",
+        "visitDate":  "2026-10-04",
+        "diagnosis":  "Orthopedic consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient05@mail.com",
+        "doctorEmail":  "doctor05@mail.com",
+        "visitDate":  "2026-10-05",
+        "diagnosis":  "Dermatology consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient06@mail.com",
+        "doctorEmail":  "doctor06@mail.com",
+        "visitDate":  "2026-10-06",
+        "diagnosis":  "Vision check appointment",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient07@mail.com",
+        "doctorEmail":  "doctor07@mail.com",
+        "visitDate":  "2026-10-07",
+        "diagnosis":  "Specialist review",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient08@mail.com",
+        "doctorEmail":  "doctor08@mail.com",
+        "visitDate":  "2026-10-08",
+        "diagnosis":  "Endocrine consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient09@mail.com",
+        "doctorEmail":  "doctor09@mail.com",
+        "visitDate":  "2026-10-09",
+        "diagnosis":  "Digestive health consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient10@mail.com",
+        "doctorEmail":  "doctor10@mail.com",
+        "visitDate":  "2026-10-10",
+        "diagnosis":  "Mental wellness consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient11@mail.com",
+        "doctorEmail":  "doctor11@mail.com",
+        "visitDate":  "2026-10-11",
+        "diagnosis":  "Routine health review",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient12@mail.com",
+        "doctorEmail":  "doctor12@mail.com",
+        "visitDate":  "2026-10-12",
+        "diagnosis":  "Neurology follow-up",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient13@mail.com",
+        "doctorEmail":  "doctor13@mail.com",
+        "visitDate":  "2026-10-13",
+        "diagnosis":  "General medicine consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient14@mail.com",
+        "doctorEmail":  "doctor14@mail.com",
+        "visitDate":  "2026-10-14",
+        "diagnosis":  "Orthopedic consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient15@mail.com",
+        "doctorEmail":  "doctor15@mail.com",
+        "visitDate":  "2026-10-15",
+        "diagnosis":  "Pediatric wellness visit",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient16@mail.com",
+        "doctorEmail":  "doctor16@mail.com",
+        "visitDate":  "2026-10-01",
+        "diagnosis":  "Dermatology consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient17@mail.com",
+        "doctorEmail":  "doctor17@mail.com",
+        "visitDate":  "2026-10-02",
+        "diagnosis":  "Vision check appointment",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient18@mail.com",
+        "doctorEmail":  "doctor18@mail.com",
+        "visitDate":  "2026-10-03",
+        "diagnosis":  "Specialist review",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient19@mail.com",
+        "doctorEmail":  "doctor19@mail.com",
+        "visitDate":  "2026-10-04",
+        "diagnosis":  "Endocrine consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    },
+    {
+        "patientEmail":  "patient20@mail.com",
+        "doctorEmail":  "doctor20@mail.com",
+        "visitDate":  "2026-10-05",
+        "diagnosis":  "Digestive health consultation",
+        "notes":  "Synthetic training data; not a real patient record or medical advice."
+    }
+]

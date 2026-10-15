@@ -1,0 +1,142 @@
+﻿[
+    {
+        "patientEmail":  "patient@mail.com",
+        "invoiceNumber":  "INV-2026-0001",
+        "amount":  "1250.00",
+        "invoiceDate":  "2026-10-01",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient02@mail.com",
+        "invoiceNumber":  "INV-2026-0002",
+        "amount":  "2200.00",
+        "invoiceDate":  "2026-10-02",
+        "status":  "PENDING"
+    },
+    {
+        "patientEmail":  "patient03@mail.com",
+        "invoiceNumber":  "INV-2026-0003",
+        "amount":  "850.00",
+        "invoiceDate":  "2026-10-03",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient04@mail.com",
+        "invoiceNumber":  "INV-2026-0004",
+        "amount":  "3400.00",
+        "invoiceDate":  "2026-10-04",
+        "status":  "PENDING"
+    },
+    {
+        "patientEmail":  "patient05@mail.com",
+        "invoiceNumber":  "INV-2026-0005",
+        "amount":  "1750.00",
+        "invoiceDate":  "2026-10-05",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient06@mail.com",
+        "invoiceNumber":  "INV-2026-0006",
+        "amount":  "950.00",
+        "invoiceDate":  "2026-10-06",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient07@mail.com",
+        "invoiceNumber":  "INV-2026-0007",
+        "amount":  "5800.00",
+        "invoiceDate":  "2026-10-07",
+        "status":  "PENDING"
+    },
+    {
+        "patientEmail":  "patient08@mail.com",
+        "invoiceNumber":  "INV-2026-0008",
+        "amount":  "1450.00",
+        "invoiceDate":  "2026-10-08",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient09@mail.com",
+        "invoiceNumber":  "INV-2026-0009",
+        "amount":  "2650.00",
+        "invoiceDate":  "2026-10-09",
+        "status":  "PENDING"
+    },
+    {
+        "patientEmail":  "patient10@mail.com",
+        "invoiceNumber":  "INV-2026-0010",
+        "amount":  "1100.00",
+        "invoiceDate":  "2026-10-10",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient11@mail.com",
+        "invoiceNumber":  "INV-2026-0011",
+        "amount":  "1900.00",
+        "invoiceDate":  "2026-10-11",
+        "status":  "PENDING"
+    },
+    {
+        "patientEmail":  "patient12@mail.com",
+        "invoiceNumber":  "INV-2026-0012",
+        "amount":  "2400.00",
+        "invoiceDate":  "2026-10-12",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient13@mail.com",
+        "invoiceNumber":  "INV-2026-0013",
+        "amount":  "1350.00",
+        "invoiceDate":  "2026-10-13",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient14@mail.com",
+        "invoiceNumber":  "INV-2026-0014",
+        "amount":  "3200.00",
+        "invoiceDate":  "2026-10-14",
+        "status":  "PENDING"
+    },
+    {
+        "patientEmail":  "patient15@mail.com",
+        "invoiceNumber":  "INV-2026-0015",
+        "amount":  "1600.00",
+        "invoiceDate":  "2026-10-15",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient16@mail.com",
+        "invoiceNumber":  "INV-2026-0016",
+        "amount":  "900.00",
+        "invoiceDate":  "2026-10-01",
+        "status":  "PENDING"
+    },
+    {
+        "patientEmail":  "patient17@mail.com",
+        "invoiceNumber":  "INV-2026-0017",
+        "amount":  "2800.00",
+        "invoiceDate":  "2026-10-02",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient18@mail.com",
+        "invoiceNumber":  "INV-2026-0018",
+        "amount":  "1300.00",
+        "invoiceDate":  "2026-10-03",
+        "status":  "PAID"
+    },
+    {
+        "patientEmail":  "patient19@mail.com",
+        "invoiceNumber":  "INV-2026-0019",
+        "amount":  "4200.00",
+        "invoiceDate":  "2026-10-04",
+        "status":  "PENDING"
+    },
+    {
+        "patientEmail":  "patient20@mail.com",
+        "invoiceNumber":  "INV-2026-0020",
+        "amount":  "1150.00",
+        "invoiceDate":  "2026-10-05",
+        "status":  "PAID"
+    }
+]
